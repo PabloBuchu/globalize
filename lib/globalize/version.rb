@@ -1,3 +1,3 @@
 module Globalize
-  Version = '5.1.1'
+  Version = '5.1.2'
 end

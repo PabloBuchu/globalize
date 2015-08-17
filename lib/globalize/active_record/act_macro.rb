@@ -11,6 +11,8 @@ module Globalize
         attr_names -= translated_attribute_names if defined?(translated_attribute_names)
 
         allow_translation_of_attributes(attr_names) if attr_names.present?
+
+        Globalize::ActiveRecord.define_accessors(self, attr_names)
       end
 
       def class_name
